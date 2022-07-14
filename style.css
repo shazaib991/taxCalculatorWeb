@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(178.96deg, #020074 9.73%, #7C0070 75.78%);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 65px;
+    text-decoration: none;
+}
+
+/* calculator-section */
+.calculator{
+    width: 100%;
+    height: calc(100vh - 78px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator::before{
+    content: "";
+    background: url("./images/c-mo-saber-las-caracter-sticas-y-especificaciones-de-mi-celular-con-el-imei-o-los-ajustes\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.calculator-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator-container h1{
+    color: rgba(2, 0, 116, 1);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.calculator-container p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.calculator-input{
+    display: flex;
+    align-items: center;
+}
+
+.calculator-input input{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding-left: 20px;
+    outline: none;
+    width: 240px;
+}
+
+.calculator-input select{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding: 0 20px;
+    width: 240px;
+    margin: 0 60px;
+}
+
+.calculator-input button{
+    background: rgba(2, 0, 116, 1);
+    color: rgba(255, 255, 255, 1);
+    height: 60px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 240px;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* tax slab */
+.tax-slab{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tax-slab-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tax-slab-container h1{
+    margin: 55px 0 38px 0;
+    color: rgba(124, 0, 112, 1);
+    font-size: 25px;
+}
+
+.tax-slab-content p{
+    margin: 0 0 30px 10px;
+    font-weight: 400;
+}
+
+.tax-slab-list li{
+    font-weight: 300;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.tax-slab-list li::before {
+    content: "·";
+    font-size: 120px;
+    color: rgba(2, 0, 116, 1);
+    vertical-align: middle;
+    line-height: 10px;
+}
