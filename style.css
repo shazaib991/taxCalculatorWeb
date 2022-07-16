@@ -17,13 +17,16 @@ nav{
     background: linear-gradient(178.96deg, #020074 9.73%, #7C0070 75.78%);
     display: flex;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .navbar-container{
     width: 85%;
+    height: 78px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navbar-logo{
@@ -201,7 +204,7 @@ nav{
 }
 
 .contact-content-container{
-    width: 80%;
+    width: 85%;
     max-width: 1337px;
     display: flex;
     justify-content: space-between;
@@ -360,9 +363,25 @@ nav{
     }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
+    nav.active{
+        height: 240px;
+    }
+
+    .navbar-links a{
+        margin: 10px 0 0 0;
+    }
+
     .navbar-links{
         display: none;
+    }
+
+    .navbar-links.active{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        flex-direction: column;
     }
 
     .navbar-burger{
