@@ -14,6 +14,11 @@ calculateBtn.addEventListener("click", () => {
     let salary = document.getElementById("amount").value;
     salary = Number(salary);
 
+    if (!salary) {
+        alert("please enter salary");
+        return;
+    }
+
     let taxSlab = "";
     let deductionMonthTax = 0;
     let deductionYearTax = 0;
