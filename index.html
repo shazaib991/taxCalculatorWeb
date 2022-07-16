@@ -27,7 +27,7 @@
         </nav>
 
         <!-- calculator section -->
-        <section>
+        <section id="calculator">
             <div class="calculator">
                 <div class="calculator-container">
                     <h1>TAX CALCULATOR PAKISTAN 2022-2023</h1>
@@ -42,14 +42,18 @@
                             id="amount"
                             placeholder="Enter Amount Here"
                         />
-                        <select name="monthly" id="monthly">
+                        <select id="salary-selection">
                             <option>Monthly</option>
+                            <option>Anually</option>
                         </select>
-                        <button>Calculate</button>
+                        <button id="calculate-btn">Calculate</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- calculation-result -->
+        <section id="calculation-result"></section>
 
         <!-- tax slab section -->
         <section>
