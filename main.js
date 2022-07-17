@@ -315,71 +315,75 @@ calculateBtn.addEventListener("click", () => {
                         <h1>Calculation Month Details</h1>
                         <hr/>
                         <div class="calculation-details-box-container">
-                            <div>
-                                <p>Exempted month amount</p>
-                                <p>${exemptedMonthAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
+                            <div class="calculation-details-box-pair">
+                                <div>
+                                    <p>Exempted month amount</p>
+                                    <p>${exemptedMonthAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
+                                <div>
+                                    <p>Exempted year amount</p>
+                                    <p>${exemptedYearAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Tax on exempted month amount</p>
-                                <p class="red-deduction">${taxOnExemptedMonthAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
+                            <div class="calculation-details-box-pair">
+                                <div>
+                                    <p>Tax on exempted month amount</p>
+                                    <p class="red-deduction">${taxOnExemptedMonthAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
+                                <div>
+                                    <p>Tax on exempted year amount</p>
+                                    <p class="red-deduction">${taxOnExemptedYearAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Taxable amount after month exemption</p>
-                                <p>${taxableAmountAfterMonthExemption.toLocaleString(
-                                    "en-US"
-                                )}</p>
+                            <div class="calculation-details-box-pair">
+                                <div>
+                                    <p>Taxable amount after month exemption</p>
+                                    <p>${taxableAmountAfterMonthExemption.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
+                                <div>
+                                    <p>Taxable amount after year exemption</p>
+                                    <p>${taxableAmountAfterYearExemption.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>% on taxable month amount</p>
-                                <p class="red-deduction">${percentageOnTaxableMonthAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
+                            <div class="calculation-details-box-pair">
+                                <div>
+                                    <p>% on taxable month amount</p>
+                                    <p class="red-deduction">${percentageOnTaxableMonthAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
+                                <div>
+                                    <p>% on taxable year amount</p>
+                                    <p class="red-deduction">${percentageOnTaxableYearAmount.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Total month tax</p>
-                                <p class="red-deduction">${totalMonthTax.toLocaleString(
-                                    "en-US"
-                                )}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calculation-details-box">
-                        <h1>Calculation Year Details</h1>
-                        <hr/>
-                        <div class="calculation-details-box-container">
-                            <div>
-                                <p>Exempted year amount</p>
-                                <p>${exemptedYearAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
-                            </div>
-                            <div>
-                                <p>Tax on exempted year amount</p>
-                                <p class="red-deduction">${taxOnExemptedYearAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
-                            </div>
-                            <div>
-                                <p>Taxable amount after year exemption</p>
-                                <p>${taxableAmountAfterYearExemption.toLocaleString(
-                                    "en-US"
-                                )}</p>
-                            </div>
-                            <div>
-                                <p>% on taxable year amount</p>
-                                <p class="red-deduction">${percentageOnTaxableYearAmount.toLocaleString(
-                                    "en-US"
-                                )}</p>
-                            </div>
-                            <div>
-                                <p>Total year tax</p>
-                                <p class="red-deduction">${totalYearTax.toLocaleString(
-                                    "en-US"
-                                )}</p>
+                            <div class="calculation-details-box-pair">
+                                <div>
+                                    <p>Total month tax</p>
+                                    <p class="red-deduction">${totalMonthTax.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
+                                <div>
+                                    <p>Total year tax</p>
+                                    <p class="red-deduction">${totalYearTax.toLocaleString(
+                                        "en-US"
+                                    )}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

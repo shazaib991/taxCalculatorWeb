@@ -213,7 +213,20 @@ nav{
     color: rgb(0, 172, 0);
 }
 
-.calculation-result-details{
+.calculation-details{
+    width: 100%;
+}
+
+.calculation-details-box > h1{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.calculation-details-box > hr{
+    width: 100%;
+}
+
+.calculation-details-box{
     background-color: rgb(236, 236, 236);
     display: flex;
     flex-direction: column;
@@ -224,18 +237,22 @@ nav{
     margin-top: 50px;
 }
 
-.calculation-details-container{
+.calculation-details-box-container{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.calculation-details-container > div{
+.calculation-details-box-pair{
+    background-color: rgb(245, 245, 245);
+}
+
+.calculation-details-box-pair > div{
     display: flex;
     justify-content: space-between;
     margin: 20px 0 30px 0;
 }
 
-.calculation-details-container > div > p{
+.calculation-details-box-pair > div > p{
     font-weight: 600;
 }
 
