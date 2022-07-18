@@ -151,6 +151,33 @@ nav{
 
 .calculation-chart-container{
     width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.calculation-chart-container > div{
+    margin-left: 20px;
+    width: 150px;
+}
+
+.calculation-chart-tax-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.calculation-chart-tax-color{
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+}
+
+.calculation-chart-tax-color.red{
+    background-color: RGB(244, 83, 77);
+}
+
+.calculation-chart-tax-color.blue{
+    background-color: RGB(91, 161, 226);
 }
 
 .calculation-result-container > h1{
