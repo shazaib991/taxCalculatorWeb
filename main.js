@@ -61,8 +61,8 @@ calculateBtn.addEventListener("click", () => {
         salaryAfterYearTax = salaryYear - deductionYearTax;
         exemptedMonthAmount = 600000 / 12;
         exemptedYearAmount = 600000;
-        taxableAmountAfterMonthExemption = salaryMonth - 600000 / 12;
-        taxableAmountAfterYearExemption = salaryYear - 600000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
         percentageOnTaxableMonthAmount =
             taxableAmountAfterMonthExemption * (2.5 / 100);
         percentageOnTaxableYearAmount =
@@ -82,16 +82,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
-        exemptedAmount = 600000;
-        taxOnExemptedAmount = 15000;
-        taxableAmountAfterMonthExemption = salaryMonth - 600000 / 12;
-        taxableAmountAfterYearExemption = salaryYear - 600000;
+        exemptedMonthAmount = 1200000 / 12;
+        exemptedYearAmount = 1200000;
+        taxOnExemptedMonthAmount = 15000 / 12;
+        taxOnExemptedYearAmount = 15000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
         percentageOnTaxableMonthAmount =
             taxableAmountAfterMonthExemption * (12.5 / 100);
         percentageOnTaxableYearAmount =
             taxableAmountAfterYearExemption * (12.5 / 100);
-        totalMonthTax = percentageOnTaxableMonthAmount - taxOnExemptedAmount;
-        totalYearTax = percentageOnTaxableYearAmount - taxOnExemptedAmount;
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Monthly" && salary > 200000 && salary <= 300000) {
@@ -105,6 +108,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 2400000 / 12;
+        exemptedYearAmount = 2400000;
+        taxOnExemptedMonthAmount = 165000 / 12;
+        taxOnExemptedYearAmount = 165000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (20 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (20 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Monthly" && salary > 300000 && salary <= 500000) {
@@ -118,6 +134,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 3600000 / 12;
+        exemptedYearAmount = 3600000;
+        taxOnExemptedMonthAmount = 405000 / 12;
+        taxOnExemptedYearAmount = 405000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (25 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (25 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Monthly" && salary > 500000 && salary <= 1000000) {
@@ -131,6 +160,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 6000000 / 12;
+        exemptedYearAmount = 6000000;
+        taxOnExemptedMonthAmount = 1005000 / 12;
+        taxOnExemptedYearAmount = 1005000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (32.5 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (32.5 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Monthly" && salary >= 1000000) {
@@ -144,6 +186,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 12000000 / 12;
+        exemptedYearAmount = 12000000;
+        taxOnExemptedMonthAmount = 2955000 / 12;
+        taxOnExemptedYearAmount = 2955000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (35 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (35 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Anually" && salary <= 600000) {
@@ -166,9 +221,10 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
-        exemptedAmount = 600000;
-        taxableAmountAfterMonthExemption = salaryMonth - 600000 / 12;
-        taxableAmountAfterYearExemption = salaryYear - 600000;
+        exemptedMonthAmount = 600000 / 12;
+        exemptedYearAmount = 600000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
         percentageOnTaxableMonthAmount =
             taxableAmountAfterMonthExemption * (2.5 / 100);
         percentageOnTaxableYearAmount =
@@ -192,6 +248,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 1200000 / 12;
+        exemptedYearAmount = 1200000;
+        taxOnExemptedMonthAmount = 15000 / 12;
+        taxOnExemptedYearAmount = 15000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (12.5 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (12.5 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (
@@ -209,6 +278,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 2400000 / 12;
+        exemptedYearAmount = 2400000;
+        taxOnExemptedMonthAmount = 165000 / 12;
+        taxOnExemptedYearAmount = 165000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (20 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (20 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (
@@ -226,6 +308,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 3600000 / 12;
+        exemptedYearAmount = 3600000;
+        taxOnExemptedMonthAmount = 405000 / 12;
+        taxOnExemptedYearAmount = 405000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (25 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (25 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (
@@ -243,6 +338,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 6000000 / 12;
+        exemptedYearAmount = 6000000;
+        taxOnExemptedMonthAmount = 1005000 / 12;
+        taxOnExemptedYearAmount = 1005000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (32.5 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (32.5 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     if (salarySelection === "Anually" && salary >= 12000000) {
@@ -256,6 +364,19 @@ calculateBtn.addEventListener("click", () => {
         exceededMonthTax = salaryMonth - deductionMonthTax;
         salaryAfterMonthTax = exceededMonthTax;
         salaryAfterYearTax = salaryYear - deductionYearTax;
+        exemptedMonthAmount = 12000000 / 12;
+        exemptedYearAmount = 12000000;
+        taxOnExemptedMonthAmount = 2955000 / 12;
+        taxOnExemptedYearAmount = 2955000;
+        taxableAmountAfterMonthExemption = salaryMonth - exemptedMonthAmount;
+        taxableAmountAfterYearExemption = salaryYear - exemptedYearAmount;
+        percentageOnTaxableMonthAmount =
+            taxableAmountAfterMonthExemption * (35 / 100);
+        percentageOnTaxableYearAmount =
+            taxableAmountAfterYearExemption * (35 / 100);
+        totalMonthTax =
+            percentageOnTaxableMonthAmount + taxOnExemptedMonthAmount;
+        totalYearTax = percentageOnTaxableYearAmount + taxOnExemptedYearAmount;
     }
 
     const resultHtml = `
@@ -312,7 +433,7 @@ calculateBtn.addEventListener("click", () => {
                 </div>
                 <div class="calculation-details">
                     <div class="calculation-details-box">
-                        <h1>Calculation Month Details</h1>
+                        <h1>Calculation Details</h1>
                         <hr/>
                         <div class="calculation-details-box-container">
                             <div class="calculation-details-box-pair">
@@ -393,4 +514,5 @@ calculateBtn.addEventListener("click", () => {
     </div>
     `;
     calculationResult.innerHTML = resultHtml;
+    document.getElementById("amount").value = "";
 });
