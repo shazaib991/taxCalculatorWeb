@@ -382,7 +382,10 @@ calculateBtn.addEventListener("click", () => {
     const resultHtml = `
     <div class="calculation-result">
         <div class="calculation-result-container">
-            <h1>Calculation Result With Tax Slab</h1>
+            <div class="calculation-chart-container">
+                <canvas id="calculation-chart"></canvas>
+            </div>
+            <h1>Tax slab</h1>
             <p>${taxSlab}</p>
             <div class="calculation-result-content">
                 <div class="calculation-result-content-container">
@@ -515,4 +518,36 @@ calculateBtn.addEventListener("click", () => {
     `;
     calculationResult.innerHTML = resultHtml;
     document.getElementById("amount").value = "";
+    let ctx = document.getElementById("calculation-chart");
+    const percentageOnTax = (totalYearTax / salaryYear) * 100;
+    const percentageOnIncome = ((salaryYear - totalYearTax) / salaryYear) * 100;
+
+    new Chart(ctx, {
+        type: "doughnut",
+        data: {
+            labels: ["Tax %", "Income %"],
+            datasets: [
+                {
+                    data: [
+                        percentageOnTax.toFixed(2),
+                        percentageOnIncome.toFixed(2),
+                    ],
+                    backgroundColor: ["RGB(244, 83, 77)", "RGB(91, 161, 226)"],
+                    borderColor: "transparent",
+                    spacing: 1.5,
+                    hoverBackgroundColor: [
+                        "RGB(231, 77, 73)",
+                        "RGB(64, 146, 223)",
+                    ],
+                },
+            ],
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                },
+            },
+        },
+    });
 });

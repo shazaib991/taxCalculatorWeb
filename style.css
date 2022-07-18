@@ -149,6 +149,10 @@ nav{
     align-items: center;
 }
 
+.calculation-chart-container{
+    width: 350px;
+}
+
 .calculation-result-container > h1{
     margin: 55px 0 38px 0;
     color: rgba(124, 0, 112, 1);
