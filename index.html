@@ -11,7 +11,12 @@
         <!-- navbar -->
         <nav>
             <div class="navbar-container">
-                <div class="navbar-logo">LOGO</div>
+                <div class="navbar-logo">
+                    <img
+                        src="./images/calculator-logo.png"
+                        alt="calculator-logo"
+                    />
+                </div>
                 <ul class="navbar-links">
                     <a href="#"><li>Calculator</li></a>
                     <a href="#"><li>Tax Slabs</li></a>
@@ -30,8 +35,10 @@
         <section id="calculator">
             <div class="calculator">
                 <div class="calculator-container">
-                    <h1>TAX CALCULATOR PAKISTAN 2022-2023</h1>
-                    <p>
+                    <h1 class="calculator-header">
+                        TAX CALCULATOR PAKISTAN 2022-2023
+                    </h1>
+                    <p class="calculator-para">
                         This is latest tax calculator as per 2022-2023 budget
                         presented by government of Pakistan.
                     </p>
@@ -48,18 +55,90 @@
                         </select>
                         <button id="calculate-btn">Calculate</button>
                     </div>
+                    <p class="calculator-terms">
+                        * Last updated : 30th June 2022. Check our Terms &
+                        Conditions
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- calculation-result -->
+        <!-- calculation result section-->
         <section id="calculation-result"></section>
+
+        <!-- tax links section -->
+        <section>
+            <div class="tax-links">
+                <div class="tax-links-container">
+                    <div class="tax-links-documents basic">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="70"
+                            height="70"
+                            fill="currentColor"
+                            class="bi bi-book"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                            />
+                        </svg>
+                        <h1>Basic Concepts of Income Tax</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Culpa corrupti porro aperiam ipsum rem
+                            voluptas impedit nihil saepe consequatur.
+                        </p>
+                        <a
+                            href="https://download1.fbr.gov.pk/Docs/20186291463739494BasicConceptsIncomeTax.pdf"
+                            target="_blank"
+                            >Download PDF</a
+                        >
+                    </div>
+                    <div class="tax-links-documents budget">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="70"
+                            height="70"
+                            fill="currentColor"
+                            class="bi bi-file-earmark-text"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"
+                            />
+                            <path
+                                d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                            />
+                        </svg>
+                        <h1>Budget Document(PDF)</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Culpa corrupti porro aperiam ipsum rem
+                            voluptas impedit nihil saepe consequatur.
+                        </p>
+                        <div class="tax-links-download">
+                            <a
+                                href="https://www.finance.gov.pk/budget/Budget_2022_23/Budget_in_Brief_English.pdf"
+                                target="_blank"
+                                >Download PDF(English)</a
+                            >
+                            <a
+                                href="https://www.finance.gov.pk/budget/Budget_2022_23/Budget_in_Brief_Urdu.pdf"
+                                target="_blank"
+                                >Download PDF(Urdu)</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- tax slab section -->
         <section>
             <div class="tax-slab">
                 <div class="tax-slab-container">
-                    <h1>Income Tax Slabs</h1>
+                    <h1>Salary Tax Slabs According to Budget 2022-23</h1>
                     <div class="tax-slab-content">
                         <p>
                             As per Federal Budget 2022-2023 presented by
@@ -69,43 +148,44 @@
                         </p>
                         <ul class="tax-slab-list">
                             <li>
-                                Where the taxable salary income does not exceed
-                                Rs. 600,000 the rate of income tax is 0%.
+                                If the annual salary income does not exceed PKR.
+                                600,000 then the rate of the income tax is 0%
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                600,000 but does not exceed Rs. 1,200,000 the
-                                rate of income tax is Rs. 100
+                                If the annual salary income exceeds PKR. 600,000
+                                but does not exceed PKR. 1.2 million then the
+                                rate of income tax is 2.5% of the amount
+                                exceeding PKR. 600,000.
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                1,200,000 but does not exceed Rs. 2,400,000 the
-                                rate of income tax is 7% of the amount exceeding
-                                Rs. 1,200,000.
+                                If the taxable annual income exceeds PKR. 1.2
+                                million but does not exceed PKR. 2.4 million
+                                then the rate of income tax is PKR. 15,000 +
+                                12.5% of the amount exceeding PKR. 1.2 million.
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                2,400,000 but does not exceed Rs. 3,600,000 the
-                                rate of income tax is Rs. 84,000 + 12.5% of the
-                                amount exceeding Rs. 2,400,000.
+                                If the annual salary income exceeds PKR. 2.4
+                                million but does not exceed PKR. 3.6 million
+                                then the rate of income tax is flat PKR 165,000
+                                + 20% of the amount exceeding PKR. 2.4 million
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                3,600,000 but does not exceed Rs. 6,000,000 the
-                                rate of income tax is Rs. 234,000 + 17.5% of the
-                                amount exceeding Rs. 3,600,000.
+                                If the annual salary income exceeds PKR. 3.6
+                                million but does not exceed PKR. 6 million then
+                                the rate of income tax is flat PKR. 405,000 +
+                                25% of the amount exceeding PKR. 3.6 million
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                6,000,000 but does not exceed Rs. 12,000,000 the
-                                rate of income tax is Rs. 654,000 + 22.5% of the
-                                amount exceeding Rs. 6,000,000.
+                                If the annual salary income exceeds PKR 6
+                                Million but does not exceed PKR. 12 million then
+                                the rate of income tax is flat PKR 1.005 million
+                                + 32.5% of the amount exceeding PKR. 6 million
                             </li>
                             <li>
-                                Where the taxable salary income exceeds Rs.
-                                12,000,000 the rate of income tax is Rs.
-                                2,004,000 + 32.5% of the amount exceeding Rs.
-                                12,000,000.
+                                If the annual salary income exceeds PKR. 12
+                                million then the rate of income tax is flat PKR
+                                2.955 million + 35% of the amount exceeding PKR.
+                                12 million
                             </li>
                         </ul>
                     </div>
