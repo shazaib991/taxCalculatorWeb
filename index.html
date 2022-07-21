@@ -4,8 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>taxCalculator</title>
+        <title>Income Tax Calculator Pakistan 2022-23</title>
         <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="shortcut icon"
+            href="./images/favicon-32x32.png"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <!-- navbar -->
@@ -13,15 +18,15 @@
             <div class="navbar-container">
                 <div class="navbar-logo">
                     <img
-                        src="./images/calculator-logo.png"
+                        src="./images/apple-touch-icon-114x114.png"
                         alt="calculator-logo"
                     />
                 </div>
                 <ul class="navbar-links">
-                    <a href="#"><li>Calculator</li></a>
-                    <a href="#"><li>Tax Slabs</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="#"><li>About</li></a>
+                    <a href="#calculator"><li>Calculator</li></a>
+                    <a href="#tax-slab"><li>Tax Slabs</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#about-us"><li>About</li></a>
                 </ul>
                 <div class="navbar-burger" id="burger">
                     <div></div>
@@ -135,66 +140,197 @@
         </section>
 
         <!-- tax slab section -->
-        <section>
+        <section id="tax-slab">
             <div class="tax-slab">
                 <div class="tax-slab-container">
                     <h1>Salary Tax Slabs According to Budget 2022-23</h1>
                     <div class="tax-slab-content">
-                        <p>
-                            As per Federal Budget 2022-2023 presented by
-                            Government of Pakistan, following slabs and income
-                            tax rates will be applicable for salaried persons
-                            for the year 2022-2023:
-                        </p>
-                        <ul class="tax-slab-list">
-                            <li>
-                                If the annual salary income does not exceed PKR.
-                                600,000 then the rate of the income tax is 0%
-                            </li>
-                            <li>
-                                If the annual salary income exceeds PKR. 600,000
-                                but does not exceed PKR. 1.2 million then the
-                                rate of income tax is 2.5% of the amount
-                                exceeding PKR. 600,000.
-                            </li>
-                            <li>
-                                If the taxable annual income exceeds PKR. 1.2
-                                million but does not exceed PKR. 2.4 million
-                                then the rate of income tax is PKR. 15,000 +
-                                12.5% of the amount exceeding PKR. 1.2 million.
-                            </li>
-                            <li>
-                                If the annual salary income exceeds PKR. 2.4
-                                million but does not exceed PKR. 3.6 million
-                                then the rate of income tax is flat PKR 165,000
-                                + 20% of the amount exceeding PKR. 2.4 million
-                            </li>
-                            <li>
-                                If the annual salary income exceeds PKR. 3.6
-                                million but does not exceed PKR. 6 million then
-                                the rate of income tax is flat PKR. 405,000 +
-                                25% of the amount exceeding PKR. 3.6 million
-                            </li>
-                            <li>
-                                If the annual salary income exceeds PKR 6
-                                Million but does not exceed PKR. 12 million then
-                                the rate of income tax is flat PKR 1.005 million
-                                + 32.5% of the amount exceeding PKR. 6 million
-                            </li>
-                            <li>
-                                If the annual salary income exceeds PKR. 12
-                                million then the rate of income tax is flat PKR
-                                2.955 million + 35% of the amount exceeding PKR.
-                                12 million
-                            </li>
-                        </ul>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>Salary income is under PKR 600,000</p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income does not exceed
+                                    PKR. 600,000 then the rate of the income tax
+                                    is 0%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Salary income exceeds PKR 600,000 but is
+                                    under PKR 1.2 Million
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR.
+                                    600,000 but does not exceed PKR. 1.2 million
+                                    then the rate of income tax is 2.5% of the
+                                    amount exceeding PKR. 600,000.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Salary income exceeds PKR 1.2 Million but is
+                                    under PKR 2.4 Million
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the taxable annual income exceeds PKR.
+                                    1.2 million but does not exceed PKR. 2.4
+                                    million then the rate of income tax is PKR.
+                                    15,000 + 12.5% of the amount exceeding PKR.
+                                    1.2 million.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Salary income exceeds PKR 2.4 Million but is
+                                    under PKR 3.6 Million
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 2.4
+                                    million but does not exceed PKR. 3.6 million
+                                    then the rate of income tax is flat PKR
+                                    165,000 + 20% of the amount exceeding PKR.
+                                    2.4 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Salary income exceeds PKR 3.6 Million but is
+                                    under PKR 6 Million
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 3.6
+                                    million but does not exceed PKR. 6 million
+                                    then the rate of income tax is flat PKR.
+                                    405,000 + 25% of the amount exceeding PKR.
+                                    3.6 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Salary income exceeds PKR 6 Million but is
+                                    under PKR 12 Million
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR 6
+                                    Million but does not exceed PKR. 12 million
+                                    then the rate of income tax is flat PKR
+                                    1.005 million + 32.5% of the amount
+                                    exceeding PKR. 6 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="./images/plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="./images/minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>Salary income exceeds PKR 12 million</p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 12
+                                    million then the rate of income tax is flat
+                                    PKR 2.955 million + 35% of the amount
+                                    exceeding PKR. 12 million
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- contact-section -->
-        <section>
+        <section id="contact">
             <div class="contact">
                 <div class="contact-container">
                     <h1>Contact Us</h1>
@@ -235,7 +371,7 @@
         </section>
 
         <!-- about us section -->
-        <section>
+        <section id="about-us">
             <div class="about-us">
                 <div class="about-us-container">
                     <h1>About Us</h1>
@@ -277,8 +413,7 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
-        <script src="./main.js"></script>
+        <script src="./main2.js"></script>
     </body>
 </html>

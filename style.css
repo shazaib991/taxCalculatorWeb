@@ -34,7 +34,7 @@ nav{
 }
 
 .navbar-logo img{
-    width: 100px;
+    width: 70px;
 }
 
 .navbar-burger{
@@ -328,7 +328,7 @@ nav{
 }
 
 .tax-links-documents:hover svg{
-    transform: translateY(-30px);
+    transform: translateY(-10px);
 }
 
 .tax-links-documents svg{
@@ -370,44 +370,79 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.tax-slab-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: RGB(247, 247, 247);
 }
 
+.tax-slab-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tax-slab-container h1{
-    margin: 55px 0 38px 0;
+    margin: 55px 0 0 0;
     color: rgba(124, 0, 112, 1);
     font-size: 25px;
 }
 
 .tax-slab-content{
-    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin: 38px 0 70px 0;
 }
 
-.tax-slab-content p{
-    margin: 0 0 30px 10px;
-    font-weight: 400;
+.tax-slab-accordion{
+    width: 100%;
+    background-color: RGB(239, 239, 238);
+    margin-bottom: 20px;
+    padding: 12px 0 12px 8px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
-.tax-slab-list li{
-    font-weight: 300;
-    margin-bottom: 10px;
-    list-style: none;
+.tax-slab-accordion-title{
     display: flex;
+    align-items: center;
 }
 
-.tax-slab-list li::before {
-    content: "·";
-    font-size: 120px;
-    color: rgba(2, 0, 116, 1);
-    vertical-align: middle;
-    line-height: 10px;
+.tax-slab-accordion-title img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.tax-slab-accordion-title p{
+    font-weight: 600;
+}
+
+.tax-slab-accordion-para{
+    max-height: 0;
+    overflow: hidden;
+    background-color: RGB(239, 239, 238);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.accordion-minus{
+    display: none;
+}
+
+.tax-slab-accordion.active .tax-slab-accordion-para{
+    overflow: visible;
+    opacity: 1;
+}
+
+.tax-slab-accordion.active .accordion-plus{
+    display: none;
+}
+
+.tax-slab-accordion.active .accordion-minus{
+    display: block;
+}
+
+.tax-slab-accordion-para p{
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    margin: 10px 0 0 15px;
 }
 
 /* contact section */
