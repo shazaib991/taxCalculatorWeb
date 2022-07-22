@@ -15,13 +15,14 @@ body{
 nav{
     width: 100%;
     height: 78px;
-    background: linear-gradient(178.96deg, #020074 9.73%, #7C0070 75.78%);
+    background: linear-gradient(178.96deg, rgb(243, 203, 124) 9.73%, RGB(253, 182, 41) 75.78%);
     display: flex;
     justify-content: center;
     transition: all 0.3s ease;
     position: sticky;
     top: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 .navbar-container{
@@ -84,7 +85,7 @@ nav{
 }
 
 .calculator-header{
-    color: rgba(2, 0, 116, 1);
+    color: rgb(224, 162, 37);
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
@@ -123,7 +124,7 @@ nav{
 }
 
 .calculator-input button{
-    background: rgba(2, 0, 116, 1);
+    background: rgb(224, 162, 37);
     color: rgba(255, 255, 255, 1);
     height: 60px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -138,6 +139,7 @@ nav{
 .calculator-terms{
     text-align: center;
     font-size: 16px;
+    font-weight: 500;
     margin-top: 20px;
 }
 
@@ -151,14 +153,15 @@ nav{
 }
 
 .calculation-result-container{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    max-width: 1336px;
 }
 
 .calculation-chart-container{
-    width: 350px;
+    width: 300px;
 }
 
 .calculation-chart-tax-container{
@@ -168,7 +171,7 @@ nav{
 
 .calculation-chart-tax{
     display: flex;
-    width: 650px;
+    width: 50%;
     flex-direction: column;
     margin: 80px 5px 0 0;
 }
@@ -176,6 +179,10 @@ nav{
 .calculation-chart-tax-slab-header{
     margin: 40px 0 20px 0;
     font-size: 25px;
+}
+
+.calculation-chart-tax-slab-para{
+    font-weight: 500;
 }
 
 .calculation-chart-tax-box{
@@ -209,7 +216,7 @@ nav{
 }
 
 .calculation-result-content{
-    width: 640px;
+    width: 620px;
     display: flex;
     flex-direction: column;
     margin: 80px 0 0 0;
@@ -227,7 +234,7 @@ nav{
     flex-direction: column;
     align-items: center;
     padding: 18px;
-    width: 280px;
+    width: 45%;
     border-radius: 5px;
 }
 
@@ -319,6 +326,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 80px 0;
+    max-width: 1337px;
 }
 
 .tax-links-documents{
@@ -361,6 +369,11 @@ nav{
     color: RGB(253, 160, 41);
 }
 
+.tax-links-download{
+    display: flex;
+    justify-content: center;
+}
+
 .tax-links-download a{
     margin-right: 10px;
 }
@@ -378,12 +391,14 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1337px;
 }
 
 .tax-slab-container h1{
     margin: 55px 0 0 0;
-    color: rgba(124, 0, 112, 1);
+    color: rgb(224, 162, 37);
     font-size: 25px;
+    text-align: center;
 }
 
 .tax-slab-content{
@@ -461,7 +476,7 @@ nav{
 
 .contact-container > h1{
     margin: 55px 0 38px 0;
-    color: rgba(124, 0, 112, 1);
+    color: rgb(224, 162, 37);
     font-size: 25px;
 }
 
@@ -494,9 +509,9 @@ nav{
 
 .contact-content-left h1{
     font-size: 25px;
-    color: rgba(124, 0, 112, 1);
     margin-bottom: 20px;
     text-align: center;
+    color: rgb(224, 162, 37);
 }
 
 .contact-content-left p{
@@ -547,8 +562,8 @@ nav{
     height: 52px;
     width: 90%;
     margin: 20px 0 15px 0;
-    border: 2px solid rgba(71, 108, 238, 1);
-    background-color: rgba(2, 0, 116, 1);
+    border: 2px solid rgb(187, 125, 1);
+    background-color: rgb(224, 162, 37);
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     font-size: 18px;
@@ -571,7 +586,7 @@ nav{
 
 .about-us h1{
     margin: 70px 0 50px 0;
-    color: rgba(124, 0, 112, 1);
+    color: rgb(224, 162, 37);
     font-size: 25px;
 }
 
@@ -581,7 +596,9 @@ nav{
 }
 
 .about-us-para p{
-    text-align: justify;
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
 }
 
 /* footer section */
@@ -590,7 +607,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #020074 0%, #7C0070 100%);
+    background: linear-gradient(180deg, rgb(221, 194, 139) 0%, rgb(224, 162, 37) 100%);
 }
 
 .footer-social-links{
@@ -683,13 +700,63 @@ nav{
         text-align: center;
     }
 
-    .calculation-result-content{
-        width: 100%;
+    .calculation-result-container{
         flex-direction: column;
     }
 
+    .calculation-result-content{
+        width: 100%;
+    }
+
+    .calculation-result-content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .calculation-result-box{
-        margin: 20px 0 0 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .calculation-chart-tax{
+        width: 100%;
+    }
+
+    .calculation-chart-tax-slab-header{
+        text-align: center;
+    }
+
+    .calculation-chart-tax-slab-para{
+        text-align: center;
+    }
+
+    .calculation-chart-container{
+        width: 300px;
+    }
+
+    .calculation-chart-tax-container{
+        flex-direction: column;
+    }
+
+    .calculation-chart-tax-box{
+        margin-top: 20px;
+    }
+
+    .tax-links-container{
+        flex-direction: column;
+    }
+
+    .tax-links-documents{
+        margin-bottom: 100px;
+    }
+
+    .tax-links-download{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tax-links-download a{
+        margin: 0 0 5px 0;
     }
 
     .contact-content-container{
